@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        p{
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .video-title{
+            font-weight: bolder;
+            font-size: 18px;
+            text-align: left;
+            width: 300px;
+            line-height: 24px;
+            margin-bottom: 4px;
+        }
+
+        .video-stats{
+            font-size: 14px;
+            color: rgb(96, 96, 96);
+            margin-bottom: 20px;
+            
+        }
+
+        .video-author{
+            font-size: 14px;
+            color: rgb(96, 96, 96);
+            margin-bottom: 20px;
+        }
+
+        .video-description{
+            font-size: 14px;
+            color: rgb(96, 96, 96);
+            width: 280px;
+            line-height: 22px;
+            margin-bottom: 100px;
+            
+        }
+
+        .apple{
+            margin-bottom: 50px;
+            font-size: 14px;
+            background-color: rgb(227, 65, 64);
+            color: white;
+            text-align: center;
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+
+        .shop:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .tahoma{
+            font-family: Tahoma;
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+
+        .arial-biggest{
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+
+        .arial-sales{
+            font-style: italic;
+            color: red;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .course{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            margin-bottom: 15px;
+        }
+
+        .html{
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .beginner{
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .in-this{
+            font-size: 14px;
+        }
+
+        .started-button{
+            border-style: none;
+            background-color: rgb(48, 156, 48);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 5px;
+            margin-left: 1px;
+            transition: opacity 0.15s;
+            margin-bottom: 30px;
+        }
+
+        .started-button:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .started-button:active{
+            opacity:0.5
+        }
+
+        .apple-at-work{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .shopping-for{
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .see-how{
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .lm{
+            color: rgb(59, 59, 196);
+        }
+
+        .lm:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .e5{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+        }
+        .new{
+            color: rgb(214, 142, 8);
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .macbook{
+            font-size: 25px;
+            font-weight: bold;
+          
+        }
+
+        .supercharged{
+            font-size: 44px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .price{
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+
+        .buy-macbook{
+            display: block;
+            margin: auto;
+            border-style: none;
+            color: white;
+            background-color: rgb(67, 108, 219);
+            padding: 7px 16px;
+            border-radius: 20px;
+            transition: opacity 0.1s;
+        }
+
+        .buy-macbook:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .buy-macbook:active{
+            opacity:0.5
+        }
+        .f5{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .stock-price{
+            font-size: 36px;
+            padding-left: 4px;
+            color: #1f1f1f;
+        }
+
+        .currency{
+            font-size: 16px;
+            color:rgba(0, 0, 0, .62)
+        }
+
+        .price-modif{
+            color:#188038;
+            font-size: 16px;
+        }
+
+        .percentage{
+            color:#188038;
+            font-size: 16px;
+        }
+
+        .day{
+            color:#188038;
+            font-size: 16px;
+        }
+
+        .after-hours{
+            color:rgba(0, 0, 0, .62)
+        }
+
+        .price-modif-ah{
+            color: #d93025;
+        }
+
+        .line-two{
+            margin-bottom: 5px;
+        }
+
+        .g5{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .user{
+            font-weight: bold;
+        }
+
+        .tag{
+            color:rgb(145, 141, 141);
+        }
+
+        .g5-line-two{
+            width: 500px;
+            margin-bottom: 18px;
+        }
+
+        .g5-line-one{
+            margin-bottom: 8px;
+        }
+
+        .user-tag{
+            color:rgb(41, 159, 214);
+        }
+
+        .user-tag:hover{
+            cursor: pointer;
+            color: rgb(37, 142, 190);
+        }
+    </style>
+</head>
+<body>
+     <p class="video-title">
+        Talking Teach and AI with Google CEO Sundar Pichai!
+     </p>
+     
+     <p class="video-stats">
+        3.4M views  &#8226 6 months ago
+     </p>
+
+     <p class="video-author">
+        Marques Brownlee &#10003
+     </p>
+
+     <p class="video-description">
+        Talking tech and AI on the heels of Google I/O.Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar
+     </p>
+
+     <hr>
+
+     <p class="apple">
+        Shop early for the best selection of holiday favourites. <span class="shop">Shop now &gt</span>
+     </p>
+
+     <hr>
+
+     <p class="tahoma">
+        This is Tahoma Font
+     </p>
+
+     <hr>
+
+     <p class="arial-biggest">
+        Biggest deals of the Year!
+     </p>
+
+     <p class="arial-sales">
+        Sales end Tuesday
+     </p>
+
+     <hr>
+
+     <p class="course">
+        
+        <span class="html">
+            HTML CSS Course
+        </span>
+        
+        <span class="beginner">
+        Beginner to Pro
+        </span>
+
+        <span  class="in-this">
+        In this course we'll learn the skills you need to become a developer
+        </span>    
+    <p>
+        <button class="started-button">Get Started</button>
+       
+       <hr>
+     <p class="apple-at-work">  
+        <span class="shopping-for">
+            Shopping for your business?
+        </span>
+    
+        <span class="see-how">See how Apple at Work can help.
+
+        </span>
+    
+   
+        <span class="lm">Learn more  &gt
+
+        </span>
+     </p>
+
+     <hr>
+     
+     <p class="e5">
+        <span class="new" >New</span>
+        <span class="macbook" >MacBook Pro</span>
+        <span class="supercharged" >Supercharged for pros.</span>
+        <span class="price" >From $1999</span>
+     </p>
+
+     <button class="buy-macbook">Buy</button>
+
+     <hr>
+
+     <div class="f5">
+        <div>
+            <span class="stock-price">1,049.61</span> 
+            <span class="currency">USD</span>
+        </div>
+        
+        <div class="line-two">
+            <span class="price-modif">+18.05</span> 
+            <span class="percentage">(1.75%)</span> 
+            <span class="day">today</span>
+        
+        </div>
+        
+        <div>
+            <span class="after-hours">After hours 1,048.00</span>
+            <span class="price-modif-ah">-1.61 (.15%)</span>
+        </div>
+     </div>
+     <hr> 
+     <div class="g5">
+        <div class="g5-line-one">
+            <span class="user">
+                freeCodeCamp.org
+            </span>
+            <span class="tag">
+                @freeCodeCamp 1h
+            </span>
+        </div>
+
+        <div class="g5-line-two">
+            <span class="">
+                As a web developer, you'll want to make your projects easy to use and navigate around.
+            </span>
+        </div>
+
+
+        <div>
+            <span>
+                Here <span class="user-tag">@chp_it</span> outlines the top skills new develoers should have.
+        
+            </span>
+        </div>
+     </div>
+
+     <hr>
+</body>
+</html> 
